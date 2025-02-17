@@ -1,0 +1,111 @@
+/* Modern and sleek updated styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    transition: background 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+    flex: 1;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.search button{
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.search button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+.search button img{
+    width: 18px;
+}
+.weather-icon{
+    width: 150px;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size: 72px;
+    font-weight: 600;
+}
+.weather h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 40px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+}
+.col img{
+    width: 35px;
+}
+.humidity, .wind{
+    font-size: 24px;
+    font-weight: 500;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff6b6b;
+    margin-top: 10px;
+    display: none;
+}
